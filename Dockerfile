@@ -1,10 +1,10 @@
-FROM python:3-alpine 
+FROM python:alpine 
 LABEL maintainer="danquahwilliam89@gmail.com"
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./app /app
-WORKDIR /app
+WORKDIR /app/api
 
 RUN python -m venv /py && \
 	/py/bin/pip install --upgrade pip && \
