@@ -1,0 +1,21 @@
+# Docker file 
+.docker
+Dockerfile 
+docker-compose.yml
+
+# Git files 
+.git 
+.gitignore 
+
+
+# Python files 
+./app/__pycache__/
+./app/*/__pycache__/
+./app/*/*/__pycache__/
+./app/*/*/*/__pycache__/
+
+# Environments files
+.venv 
+env 
+.env 
+venv 
